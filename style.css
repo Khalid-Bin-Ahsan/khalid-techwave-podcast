@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -24,6 +31,12 @@
 
 /* trying a gradient text style for button and logo */
 
+.gradient-text {
+  background: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .btn-grad {
   background-image: linear-gradient(
     45deg,
@@ -37,7 +50,7 @@
   margin: 10px;
   padding: 12px 16px;
   text-align: center;
-  /* text-transform: uppercase; */
+  font-weight: 600;
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
@@ -48,7 +61,7 @@
 }
 
 .btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
   color: #fff;
   text-decoration: none;
 }
@@ -58,7 +71,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 12.5rem;
   background-color: #1a0b2e;
 }
 
@@ -73,8 +86,17 @@
   font-weight: 500;
 }
 
+.nav-links a {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ff3d3d;
+}
+
 .logo h1 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 800;
 }
