@@ -109,7 +109,7 @@
 .hero-section {
   background-image: url(assets/hero-bg.png);
 
-  /* background-position: center; */
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   /* position: relative; */
@@ -124,12 +124,6 @@
   align-items: center;
   gap: 1.5rem;
 }
-/* .hero-content {
-  padding: 8rem 12.5rem;
-  display: flex;
-  text-align: center;
-  align-items: center;
-} */
 
 .bg-circle {
   position: center;
