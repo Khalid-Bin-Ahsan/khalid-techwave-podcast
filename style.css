@@ -115,7 +115,12 @@
 }
 
 .nav-links a:hover {
-  color: #ff3d3d;
+  color: #ffffff;
+  background-color: #3a1a6e;
+  border-radius: 8px;
+  padding: 0.25rem 0.5rem;
+  /* transform: translateY(-10px);
+  transition: all 0.3s ease; */
 }
 
 .logo h1 {
@@ -264,14 +269,34 @@
 .choice-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 2rem;
 }
+
+/* spannig rows and columns
+ */
+.one-c-two-r {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.two-c-one-r {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.one-c-one-r {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
 .choice-card {
   background-color: #290e4c;
   padding: 2.5rem;
   border-radius: 40px;
   text-align: left;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  justify-content: center;
 }
 .choice-card:hover {
   background-color: #3a1a6e;
