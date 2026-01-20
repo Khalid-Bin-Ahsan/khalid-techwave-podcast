@@ -459,7 +459,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-  /* Navbar */
   .navbar {
     flex-direction: column;
     padding: 1rem;
@@ -471,7 +470,6 @@ footer {
     gap: 1rem;
   }
 
-  /* Hero */
   .hero-img-container {
     width: 220px;
     height: 220px;
@@ -500,7 +498,6 @@ footer {
     font-size: 0.7rem;
   }
 
-  /* About */
   .about-cointainer {
     margin: 4rem 1.5rem;
   }
@@ -509,14 +506,12 @@ footer {
     font-size: 2rem;
   }
 
-  /* Stats */
   .stats-container {
     flex-direction: column;
     gap: 2.5rem;
     margin: 3rem 1.5rem;
   }
 
-  /* Choice Cards */
   .choice-card-page {
     padding: 4rem 1.5rem;
   }
@@ -533,7 +528,6 @@ footer {
     grid-row: span 1;
   }
 
-  /* Featured */
   .featured-container {
     margin: 4rem 1.5rem;
   }
@@ -542,28 +536,75 @@ footer {
     flex-direction: column;
   }
 
-  /* Footer */
-  .footer-container {
-    margin: 3rem 1.5rem;
-  }
-
-  .footer-container .logo h1 {
-    font-size: 2.5rem;
-  }
-
   .footer-links {
     flex-direction: column;
     align-items: center;
   }
+  .footer-container {
+    margin: 3rem 1.5rem;
+  }
+
+  .footer-container-items {
+    text-align: center;
+  }
+
+  .footer-container .logo h1 {
+    font-size: 2.2rem;
+  }
+
+  .footer-links ul {
+    padding: 0;
+  }
+
+  .footer-links li {
+    display: block;
+    margin: 0.75rem 0;
+  }
+
+  .host-container {
+    margin: 4rem 1.5rem;
+  }
+
+  .host-head h1 {
+    font-size: 2rem;
+  }
+
+  .host-body {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .host-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+
+  .host-details h1 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+
+  .host-details p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .host-socials ul {
+    padding: 0;
+  }
+
+  .host-socials li {
+    margin: 0 0.5rem;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
-  /* Navbar */
   .navbar {
     padding: 1rem 3rem;
   }
 
-  /* Hero */
   .hero-img-container {
     width: 280px;
     height: 280px;
@@ -573,19 +614,16 @@ footer {
     font-size: 3rem;
   }
 
-  /* About */
   .about-cointainer {
     margin: 5rem 3rem;
   }
 
-  /* Stats */
   .stats-container {
     flex-wrap: wrap;
     gap: 3rem;
     margin: 4rem 3rem;
   }
 
-  /* Choice Cards */
   .choice-card-page {
     padding: 5rem 3rem;
   }
@@ -601,7 +639,6 @@ footer {
     grid-row: span 1;
   }
 
-  /* Featured */
   .featured-container {
     margin: 5rem 3rem;
   }
@@ -614,12 +651,24 @@ footer {
     width: calc(50% - 1rem);
   }
 
-  /* Footer */
   .footer-container {
     margin: 5rem 3rem;
   }
 
   .footer-container .logo h1 {
     font-size: 3.5rem;
+  }
+
+  .host-container {
+    margin: 5rem 3rem;
+  }
+
+  .host-body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .host-body img {
+    width: 160px;
   }
 }
