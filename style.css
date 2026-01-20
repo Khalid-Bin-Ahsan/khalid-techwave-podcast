@@ -346,7 +346,8 @@ footer {
 }
 .footer-links li {
   list-style: none;
-  /* display: flex; */
+  display: inline;
+  margin-right: 1rem;
 }
 .footer-links a {
   text-decoration: none;
@@ -367,7 +368,7 @@ footer {
   background-color: #190a2d;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #412466;
+  /* border-bottom: 1px solid #412466; */
 }
 .featured-head h1 {
   font-size: 3rem;
@@ -416,6 +417,45 @@ footer {
   color: #00ff88;
   font-weight: 600;
   padding: 0 2rem 2rem 2rem;
+}
+
+.host-container {
+  margin: 7.5rem 12.5rem;
+  /* align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #412466; */
+}
+
+.host-head h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+.host-body {
+  display: flex;
+  gap: 2rem;
+  max-width: 75rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #240c43;
+  padding: 2.5rem;
+  border-radius: 40px;
+  max-width: 75rem;
+}
+.host-body:hover {
+  background-color: #3a1a6e;
+}
+.host-socials li {
+  list-style: none;
+  display: inline;
+  margin-right: 1rem;
+}
+
+.host-details p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 576px) {
@@ -514,5 +554,72 @@ footer {
   .footer-links {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  /* Navbar */
+  .navbar {
+    padding: 1rem 3rem;
+  }
+
+  /* Hero */
+  .hero-img-container {
+    width: 280px;
+    height: 280px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  /* About */
+  .about-cointainer {
+    margin: 5rem 3rem;
+  }
+
+  /* Stats */
+  .stats-container {
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 4rem 3rem;
+  }
+
+  /* Choice Cards */
+  .choice-card-page {
+    padding: 5rem 3rem;
+  }
+
+  .choice-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .one-c-two-r,
+  .two-c-one-r {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* Featured */
+  .featured-container {
+    margin: 5rem 3rem;
+  }
+
+  .featured-cards-container {
+    flex-wrap: wrap;
+  }
+
+  .featured-card {
+    width: calc(50% - 1rem);
+  }
+
+  /* Footer */
+  .footer-container {
+    margin: 5rem 3rem;
+  }
+
+  .footer-container .logo h1 {
+    font-size: 3.5rem;
   }
 }
