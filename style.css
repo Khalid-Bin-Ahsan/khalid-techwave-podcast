@@ -598,6 +598,10 @@ footer {
   .host-socials li {
     margin: 0 0.5rem;
   }
+  .host-socials img {
+    width: 5%;
+    height: 5%;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
