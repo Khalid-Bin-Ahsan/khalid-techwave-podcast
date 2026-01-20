@@ -209,7 +209,7 @@
 }
 
 .about-cointainer {
-  margin: 50px auto;
+  margin: 7.5rem 12.5rem;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #412466;
@@ -228,6 +228,7 @@
   line-height: 1.1rem;
   margin-bottom: 5rem;
   font-weight: 400;
+  /* border-bottom: 1px solid #412466; */
 }
 
 .stats-container {
@@ -359,4 +360,12 @@ footer {
   margin-top: 2rem;
   font-size: 0.875rem;
   color: #877998;
+}
+
+.featured-container {
+  margin: 7.5rem 12.5rem;
+  background-color: #190a2d;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #412466;
 }
