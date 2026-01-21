@@ -490,11 +490,20 @@ footer {
     gap: 1rem;
   }
 
+  .hero-section {
+    position: relative;
+    min-height: 100%;
+  }
+
   .hero-img-container {
+    margin-top: 2.5rem;
     width: 220px;
     height: 220px;
   }
-
+  .btn-cntnr {
+    display: flex;
+    flex-direction: row;
+  }
   .mic-img {
     width: 90px;
   }
@@ -506,10 +515,6 @@ footer {
   .hero-content p {
     font-size: 0.9rem;
     padding: 0 1rem;
-  }
-
-  .btn-cntnr {
-    flex-direction: column;
   }
 
   .badge {
