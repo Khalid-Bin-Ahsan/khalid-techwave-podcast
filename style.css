@@ -328,7 +328,7 @@
   font-weight: 400;
 }
 
-footer {
+.footer-section {
   background-image: url(assets/footer-bg.png);
   background-size: cover;
   background-position: center;
@@ -336,8 +336,19 @@ footer {
   overflow: hidden;
 }
 
+/* position: relative;
+  min-height: 100vh;
+  background: url("assets/hero-bg.png") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  border-top: 1px solid #412466; */
+
 .footer-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 7.5rem;
@@ -345,14 +356,16 @@ footer {
 
 .footer-container .logo h1 {
   font-size: 5rem;
+  text-align: center;
 }
 
 .footer-links {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
   justify-content: space-around;
   margin: 2rem;
+  align-items: center;
 }
 .footer-links li {
   list-style: none;
@@ -462,6 +475,11 @@ footer {
   list-style: none;
   display: inline;
   margin-right: 1rem;
+  border: 2px solid #533c72;
+  padding: 0.5rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .host-details p {
@@ -574,9 +592,21 @@ footer {
   .featured-cards-container {
     flex-direction: column;
   }
+  .footer-section {
+    min-height: 100%;
+    position: relative;
+
+    background-image: url(assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
 
   .footer-links {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     align-items: center;
   }
   .footer-container {
@@ -636,6 +666,9 @@ footer {
 
   .host-socials li {
     margin: 0 0.5rem;
+    border: 2px solid #533c72;
+    padding: 0.5rem;
+    border-radius: 50%;
   }
   .host-socials img {
     width: 5%;
